@@ -1,3 +1,12 @@
 .header {
   padding-block: 1rem;
 }
+
+.home {
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+}

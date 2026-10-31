@@ -1,5 +1,51 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --green: #baff1b;
+  --blue: #4500e4;
+}
+
+.site {
+  --bg: var(--green);
+  --ink: var(--blue);
+
+  background: var(--bg);
+  color: var(--ink);
+
+  font-family: 'Geist', Arial, Helvetica, sans-serif;
+  min-height: 100svh;
+  line-height: 1.6;
+}
+
+.content {
+  width: min(740px, calc(100% - 44px));
+  margin: 30px auto 75px;
+  overflow-wrap: break-word;
+}
+
+.content > h1,
+.content > h2 {
+  margin: 0 0 clamp(36px, 4vw, 56px);
+  font-size: 28px;
+  line-height: 1.2;
 }
